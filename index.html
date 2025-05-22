@@ -1,0 +1,93 @@
+<!doctype html>
+<html class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="relative bg-[#FFFBDE]">
+    <header class="fixed z-10 w-full top-0 flex flex-col md:flex-row gap-5 justify-between px-8 bg-[#096B68] text-white py-3 items-center shadow-lg">
+        <div class="logo font-bold text-3xl">Roël Siemens</div>
+        <nav>
+            <ul class="flex gap-10 items-center">
+                <li class="hover:bg-teal-600/50 p-2 border-b-2 border-[#096B68] rounded-lg hover:border-b-2 hover:border-white border-spacing-5">
+                    <a href="#" class="">Home</a>
+                </li>
+                <li class="hover:bg-teal-600/50 p-2 rounded-lg hover:border-b-2">
+                    <a href="#about me">About me</a>
+                </li>
+                <li class="hover:bg-teal-600/50 p-2 rounded-lg hover:border-b-2">
+                    <a href="#projects">Projecten</a>
+                </li>
+                <li class="hover:bg-teal-600/50 p-2 rounded-lg hover:border-b-2">
+                    <a href="#contacts">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="hero max-w-7xl mx-auto bg-[#096B68] grid grid-cols-1 md:grid-cols-2 mb-30 mt-20 rounded-lg shadow-lg">
+            <div class="hero-left p-10 ">
+                <h1 class="bg-[#129990] text-3xl font-bold text-white px-3 py-3 rounded-t-lg shadow-lg">Hey, ik ben Roël Siemens! Dit is mijn portfolio website.</h1>
+                <h2 class="bg-[#129990] text-white px-3 shadow-lg">Ik ben een Game Developer en student bij Noorderpoort Groningen.</h2>
+                <p class="bg-[#129990] text-white px-3 pb-3 mb-10 rounded-b-lg shadow-lg">Mijn naam is Roël Siemens en ik ben geboren op 29/12/2006. Ik ben een hardwerkende software developer die leergierig is. Ik hou ervan om uitdagingen aan te gaan en mensen helpen vind ik het leukste om te doen.</p>
+                <a href="#" class="bg-teal-900 text-white p-2 ms-5 rounded-sm shadow-2xl hover:bg-teal-950">lees meer</a>
+            </div>
+            <div class="hero-right border-30 border-[#096B68] order-first md:order-last rounded-r-lg">
+                <img src="img/Roël staand.jpg" alt="" class="rounded-lg shadow-lg">
+            </div>
+
+        </section>
+        <section id="about me" class="info max-w-7xl mx-auto bg-[#096B68] grid grid-cols-1 md:grid-cols-2 rounded-lg my-30 shadow-lg">
+            <div class="info-left relative size-100 top-20 -right-20">
+                <img src="img/Roël joods monument.jpg" alt="" class="absolute w-lg shadow-2xl -top-10 -right-15 ">
+                <img src="img/voetbal actie foto Roël.jpg" alt="" class="relative w-lg shadow-2xl">
+            </div>
+            <div class="info-right p-15 text-white pt-20 ">
+                <div class="bg-[#129990] rounded-lg p-3">
+                    <h1 class="text-center p-3 font-bold text-5xl">Dit ben ik</h1>
+                    <p class="p-3 ">Mijn hobbies zijn voetbal en tijd doorbrengen met vrienden. ik voetbal bij vv B.N.C en ben daar keeper bij de senioren. In mijn vrije tijd vind het leuk om wel eens uit te gaan. Als voorbeeld ben ik vaak te vinden bij feesten en soms ook wel eens bij een concert.</p>
+                    <a href="https://www.google.com/maps/place/Finsterwolde" class="p-3 underline decoration-solid hover:text-black">Voetbalvereniging B.N.C. , Finsterwolde</a>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="projects grid grid-cols-1 lg:grid-cols-3 justify-center place-items-center max-w-7xl bg-[#096B68]  mx-auto my-30 rounded-lg shadow-lg text-white pt-10">
+            <div class="project-left place-items-center mb-30">
+                <img src="img/indie race game.png" alt="" class="size-80 rounded-lg border-10 border-[#129990] shadow-lg mb-10">
+                <a href="https://youtu.be/CAWQ1k1Rfko" target="_blank" class="bg-[#129990] rounded-sm px-10 py-5 underline decoration-solid hover:text-black">Indie Race Game</a>
+            </div>
+            <div class="project-middle place-items-center mb-30">
+                <img src="img/Hacksclusive game.png" alt="" class="size-80 rounded-lg border-10 border-[#129990] shadow-lg mb-10">
+                <a href="https://youtu.be/FQzwNPrThJw" target="_blank" class="bg-[#129990] rounded-sm px-10 py-5 underline decoration-solid hover:text-black">Hacksclusive game</a>
+            </div>
+            <div class="project-right place-items-center mb-30">
+                <img src="img/looping miner.png" alt="" class="size-80 rounded-lg border-10 border-[#129990] shadow-lg mb-10">
+                <a href="https://mimicaldev.itch.io/looping-miner" target="_blank" class="bg-[#129990] rounded-sm px-10 py-5 underline decoration-solid hover:text-black">Looping Miner</a>
+            </div>
+        </section>
+        <section id="contacts" class="contacts flex flex-col max-w-7xl mx-auto bg-[#096B68] rounded-lg p-30 mb-30 shadow-lg">
+            <div class="bg-[#129990] p-10 rounded-lg shadow-lgr">
+                <div class="flex flex-row lg:flex-row border-b-2 py-10 font-bold text-white bg-[#129990]">
+                    <p class="pr-15 pl-8">
+                        <img src="img/email.png" class="h-10 w-40  bg-[#90D1CA] rounded-sm" alt="">
+                    </p>
+                    <a href="https://github.com/roelsiemens" target="_blank" class="hover:text-black px-15">
+                        <img src="img/github-square.png" class="size-10" alt="">
+                    </a>
+                    <h1 class="text-4xl">contacts</h1>
+                    <a href="https://www.linkedin.com/in/roel-siemens-a8b426337/" target="_blank" class="hover:text-black px-15">
+                        <img src="img/social-linkedin.png" class="size-10" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/roel_siemens/" target="_blank" class="hover:text-black px-15">
+                        <img src="img/instagram-alt.png" class="size-10" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="flex flex-row bg-teal-700 py-5 text-white px-8 justify-between">
+        <div class="font-bold text-3xl place-self-end">Roël Siemens</div>
+        <a href="#" class="fixed bottom-4 right-5 bg-[#129990] px-3 py-2 rounded-lg border-b-2 border-[#129990] hover:border-b-2 hover:border-white">to top ^</a>
+    </footer>
+  </body>
+</html>
