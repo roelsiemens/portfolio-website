@@ -4,24 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </head>
   <body class="relative bg-linear-to-b from-white to-[#171738]">
-    <header class="fixed z-10 w-full top-0 flex flex-col md:flex-row gap-5 justify-between px-8 text-black py-3 items-center">
+    <header class="fixed z-10 w-full top-0 flex md:flex-row gap-5 justify-between px-8 text-black py-3">
         <div class="logo font-bold text-3xl">
             <a href="#" class=" p-2 rounded-lg hover:border-b-2">Roël Siemens</a>
         </div>
-        <nav>
-            <ul class="flex gap-10 items-center">
-                <li class="py-2 bg-stone-200 rounded-2xl shadow-lg">
-                    <a href="#" class="p-3">Home</a>
+        <nav onclick="" class="flex flex-col gap-3 items-end">
+            <div>
+                <button></button>
+                <ion-icon onclick="ontogglemenu(this)" name="menu" class="size-7 hover:cursor-pointer"></ion-icon>
+            </div>
+            <ul class="nav-links sr-only">
+                <li class="py-2 mb-5 bg-black rounded-2xl shadow-lg">
+                    <a href="#" class="p-3 text-white">Home</a>
                 </li>
-                <li class="py-2 bg-stone-200 rounded-2xl shadow-lg">
+                <li class="py-2 mb-5 bg-stone-200 rounded-2xl shadow-lg">
                     <a href="#about me" class="p-3">About me</a>
                 </li>
-                <li class="py-2 bg-stone-200 rounded-2xl shadow-lg">
+                <li class="py-2 mb-5 bg-stone-200 rounded-2xl shadow-lg">
                     <a href="#projects" class="p-3">Projecten</a>
                 </li>
-                <li class="py-2 bg-stone-200 rounded-2xl shadow-lg">
+                <li class="py-2 mb-5 bg-stone-200 rounded-2xl shadow-lg">
                     <a href="#contacts" class="p-3">Contact</a>
                 </li>
             </ul>
@@ -91,5 +97,13 @@
     <footer class="flex flex-row py-5 text-white px-8 justify-between">
         <a href="#" class="fixed text-white font-bold bottom-4 right-5 bg-[#3423a6] px-3 py-2 rounded-lg border-b-2 border-[#3423a6] hover:border-b-2 hover:border-white">to top ^</a>
     </footer>
+
+    <script>
+        const navlinks = document.querySelector('.nav-links')
+        function ontogglemenu(e){
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navlinks.classList.toggle('not-sr-only')
+        }
+    </script>
   </body>
 </html>
