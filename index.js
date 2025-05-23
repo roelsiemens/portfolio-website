@@ -17,3 +17,8 @@
                     page.classList.add('bg-white');
                 }  
         })
+        const navlinks = document.querySelector('.nav-links')
+        function ontogglemenu(e){
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navlinks.classList.toggle('not-sr-only')
+        }

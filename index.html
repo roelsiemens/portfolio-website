@@ -17,7 +17,7 @@
         <nav onclick="" class="flex flex-col gap-3 items-end">
             <div>
                 <button></button>
-                <ion-icon onclick="ontogglemenu(this)" name="menu" class="size-7 hover:cursor-pointer"></ion-icon>
+                <ion-icon onclick="ontogglemenu(this)" name="menu" class="size-7 transition-transform hover:cursor-pointer"></ion-icon>
             </div>
             <ul class="nav-links sr-only">
                 <li class="py-2 mb-5 bg-black rounded-2xl shadow-lg">
@@ -36,7 +36,7 @@
         </nav>
     </header>
     <main>
-        <section id="home" class="hero max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 mb-30 mt-20 ">
+        <section id="home" class="hero max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 md:mb-30 mt-15 md:mt-20 ">
             <div class="hero-left p-10 bg-linear-to-b from-[#e9eff6] to-[#7180B9] md:rounded-l-3xl">
                 <div class="">
                     <h1 class="text-3xl text-black font-bold px-3 py-3 rounded-t-lg">Hey, ik ben Roël Siemens! Dit is mijn portfolio website.</h1>
@@ -49,8 +49,8 @@
                 <img src="img/Roël.jpg" alt="" class="md:rounded-r-3xl">
             </div>
         </section>
-        <section id="about me" class="info max-w-7xl mx-auto bg-linear-to-b from-[#7180B9] to-[#454e6a] grid grid-cols-1 md:grid-cols-2 rounded-3xl my-30 shadow-lg">
-            <div class="info-left relative size-80 mx-auto md:size-100 top-20 md:-right-20">
+        <section id="about me" class="info max-w-7xl mx-auto bg-linear-to-b from-[#7180B9] to-[#454e6a] grid grid-cols-1 md:grid-cols-2 md:rounded-3xl md:my-30 shadow-lg">
+            <div class="info-left relative size-80 mx-auto md:size-100 top-20 md:-right-20 ml-5">
                 <img src="img/Roël joods monument.jpg" alt="" class="absolute w-lg shadow-2xl -top-10 md:-right-15 rounded-2xl">
                 <img src="img/voetbal actie foto Roël.jpg" alt="" class="relative w-lg shadow-2xl rounded-2xl">
             </div>
@@ -64,16 +64,19 @@
         </section>
         <section id="projects" class="projects grid grid-cols-1 lg:grid-cols-3 justify-center place-items-center max-w-7xl bg-linear-to-b from-[#454e6a] to-[#171738]  mx-auto my-30 rounded-3xl shadow-lg text-white pt-10">
             <div class="project-left place-items-center mb-30">
-                <img src="img/indie race game.png" alt="" class="size-80 rounded-2xl shadow-lg mb-10">
-                <a href="https://youtu.be/CAWQ1k1Rfko" target="_blank" class="font-bold rounded-sm px-10 py-5 underline decoration-solid hover:text-black">Indie Race Game</a>
+                <a href="https://youtu.be/CAWQ1k1Rfko" target="_blank" class="font-bold rounded-sm px-10 py-5 underline decoration-solid hover:text-black">
+                    <img src="img/indie race game.png" alt="" class="size-80 rounded-2xl shadow-lg shadow-white mb-10">
+                </a>
             </div>
             <div class="project-middle place-items-center mb-30">
-                <img src="img/Hacksclusive game.png" alt="" class="size-80 rounded-2xl shadow-lg mb-10">
-                <a href="https://youtu.be/FQzwNPrThJw" target="_blank" class="font-bold rounded-sm px-10 py-5 underline decoration-solid hover:text-black">Hacksclusive game</a>
+                <a href="https://youtu.be/FQzwNPrThJw" target="_blank" class="font-bold rounded-sm px-10 py-5 underline decoration-solid hover:text-black">
+                        <img src="img/Hacksclusive game.png" alt="" class="size-80 rounded-2xl shadow-lg shadow-white mb-10">
+                </a>
             </div>
             <div class="project-right place-items-center mb-30">
-                <img src="img/looping miner.png" alt="" class="size-80 rounded-2xl shadow-md shadow-white mb-10">
-                <a href="https://mimicaldev.itch.io/looping-miner" target="_blank" class="font-bold rounded-sm px-10 py-5 underline decoration-solid hover:text-black">Looping Miner</a>
+                <a href="https://mimicaldev.itch.io/looping-miner" target="_blank" class="font-bold rounded-sm underline decoration-solid hover:text-black">
+                    <img src="img/looping miner.png" alt="" class="size-80 rounded-2xl shadow-lg shadow-white mb-10">
+                </a>
             </div>
         </section>
         <section id="contacts" class="contacts flex flex-col max-w-7xl mx-auto bg-linear-to-b/srgb from-[#171738] to-black rounded-3xl p-30 mb-30 shadow-lg">
@@ -99,7 +102,6 @@
     <footer class="flex flex-row py-5 text-white px-8 justify-between">
         <a href="#" class="fixed text-white font-bold bottom-4 right-5 bg-[#3423a6] px-3 py-2 rounded-lg border-b-2 border-[#3423a6] hover:border-b-2 hover:border-white">to top ^</a>
     </footer>
-
     <script>
         const navlinks = document.querySelector('.nav-links')
         function ontogglemenu(e){
