@@ -1,16 +1,18 @@
 <!doctype html>
 <html class="scroll-smooth">
   <head>
+    <title>porfolio website Roël Siemens</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="index.js"></script>
   </head>
-  <body class="relative bg-linear-to-b from-white to-[#171738]">
+  <body class="relative bg-white transition-colors duration-2000" id="page">
     <header class="fixed z-10 w-full top-0 flex md:flex-row gap-5 justify-between px-8 text-black py-3">
-        <div class="logo font-bold text-3xl">
-            <a href="#" class=" p-2 rounded-lg hover:border-b-2">Roël Siemens</a>
+        <div id="text" class="logo font-bold text-3xl">
+            <a href="#" class="">Roël Siemens</a>
         </div>
         <nav onclick="" class="flex flex-col gap-3 items-end">
             <div>
@@ -34,8 +36,8 @@
         </nav>
     </header>
     <main>
-        <section id="home" class="hero max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 mb-30 mt-20">
-            <div class="hero-left p-10 bg-linear-to-b from-[#e9eff6] to-[#7180B9] rounded-l-3xl">
+        <section id="home" class="hero max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 mb-30 mt-20 ">
+            <div class="hero-left p-10 bg-linear-to-b from-[#e9eff6] to-[#7180B9] md:rounded-l-3xl">
                 <div class="">
                     <h1 class="text-3xl text-black font-bold px-3 py-3 rounded-t-lg">Hey, ik ben Roël Siemens! Dit is mijn portfolio website.</h1>
                     <h2 class="px-3 font-bold">Ik ben een Game Developer en student bij Noorderpoort Groningen.</h2>
@@ -44,12 +46,12 @@
                 </div>
             </div>
             <div class="hero-right order-first md:order-last">
-                <img src="img/Roël staand.jpg" alt="" class="rounded-r-3xl">
+                <img src="img/Roël.jpg" alt="" class="md:rounded-r-3xl">
             </div>
         </section>
         <section id="about me" class="info max-w-7xl mx-auto bg-linear-to-b from-[#7180B9] to-[#454e6a] grid grid-cols-1 md:grid-cols-2 rounded-3xl my-30 shadow-lg">
-            <div class="info-left relative size-100 top-20 -right-20">
-                <img src="img/Roël joods monument.jpg" alt="" class="absolute w-lg shadow-2xl -top-10 -right-15 rounded-2xl">
+            <div class="info-left relative size-80 mx-auto md:size-100 top-20 md:-right-20">
+                <img src="img/Roël joods monument.jpg" alt="" class="absolute w-lg shadow-2xl -top-10 md:-right-15 rounded-2xl">
                 <img src="img/voetbal actie foto Roël.jpg" alt="" class="relative w-lg shadow-2xl rounded-2xl">
             </div>
             <div class="info-right p-15 text-white pt-20 ">
@@ -76,12 +78,12 @@
         </section>
         <section id="contacts" class="contacts flex flex-col max-w-7xl mx-auto bg-linear-to-b/srgb from-[#171738] to-black rounded-3xl p-30 mb-30 shadow-lg">
             <div class=" p-10 rounded-lg shadow-lgr">
-                <div class="flex flex-row lg:flex-row border-b-2 py-10 font-bold text-white">
-                    <p class="pr-15 pl-8">
-                        <img src="img/email.png" class="h-10 w-40 rounded-sm" alt="">
-                    </p>
+                <div class="grid grid-cols-1 md:grid-cols-5 md:place-items-center md:gap-10 border-b-2 py-10 font-bold text-white">
+                    <div>
+                        <img src="img/email.png" alt="">
+                    </div>
                     <a href="https://github.com/roelsiemens" target="_blank" class="hover:text-black px-15">
-                        <img src="img/github.256x249.png" class="size-10" alt="">
+                        <img src="img/github.256x249.png" class="size-10 relative" alt="">
                     </a>
                     <h1 class="text-4xl">contacts</h1>
                     <a href="https://www.linkedin.com/in/roel-siemens-a8b426337/" target="_blank" class="hover:text-black px-15">
