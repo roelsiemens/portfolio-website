@@ -13,7 +13,12 @@
                     text.classList.remove('text-white');
                     navbar.classList.add('bg-[#7180b9]');
                     navbar.classList.remove('bg-[#3423a6]');
-                    page.classList.remove('md:bg-[#171738]');
+                    page.classList.remove('md:wbg-[#171738]');
                     page.classList.add('md:bg-white');
                 }  
         })
+            const dot = document.getElementById('cursor-dot');
+
+    window.addEventListener('mousemove', (e) => {
+      dot.style.transform = `translate(${e.clientX - 4}px, ${e.clientY - 4}px)`;
+    });
