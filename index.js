@@ -17,3 +17,25 @@ window.addEventListener('scroll', () => {
         page.classList.add('md:bg-white');
      }  
 })
+    let gewisseld = false;
+
+    function verwisselfotos() {
+      const blok1 = document.getElementById("foto1");
+      const blok2 = document.getElementById("foto2");
+
+      const pos1 = blok1.getBoundingClientRect();
+      const pos2 = blok2.getBoundingClientRect();
+
+      const offsetX = pos2.left - pos1.left;
+      const offsetY = pos2.top - pos1.top;
+
+      if (!gewisseld) {
+        blok1.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+        blok2.style.transform = `translate(${-offsetX}px, ${-offsetY}px)`;
+      } else {
+        blok1.style.transform = `translate(0, 0)`;
+        blok2.style.transform = `translate(0, 0)`;
+      }
+
+      gewisseld = !gewisseld;
+    }
