@@ -20,16 +20,16 @@
                 <ion-icon onclick="ontogglemenu(this)" name="menu" class="size-7 transition-transform hover:cursor-pointer"></ion-icon>
             </div>
             <ul class="nav-links sr-only">
-                <li class="py-2 mb-5 bg-black rounded-2xl shadow-lg">
-                    <a href="#" class="p-3 text-white">Home</a>
+                <li class="py-2 mb-5 bg-white rounded-2xl shadow-lg">
+                    <a href="#" class="p-3 text-black">Home</a>
                 </li>
-                <li class="py-2 mb-5 bg-stone-200 rounded-2xl shadow-lg">
+                <li class="py-2 mb-5 bg-white rounded-2xl shadow-lg">
                     <a href="#about me" class="p-3">About me</a>
                 </li>
-                <li class="py-2 mb-5 bg-stone-200 rounded-2xl shadow-lg">
+                <li class="py-2 mb-5 bg-white rounded-2xl shadow-lg">
                     <a href="#projects" class="p-3">Projecten</a>
                 </li>
-                <li class="py-2 mb-5 bg-stone-200 rounded-2xl shadow-lg">
+                <li class="py-2 mb-5 bg-white rounded-2xl shadow-lg">
                     <a href="#contacts" class="p-3">Contact</a>
                 </li>
             </ul>
@@ -37,7 +37,7 @@
     </header>
     <main>
         <section id="home" class="hero max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 md:mb-30 mt-15 md:mt-20 ">
-            <div class="hero-left p-10 bg-linear-to-b from-[#e9eff6] to-[#7180B9] md:rounded-l-3xl">
+            <div class="hero-left p-10 bg-linear-to-b from-[#e9eff6] to-[#7180B9] md:rounded-l-3xl shadow-lg">
                 <div class="">
                     <h1 class="text-3xl text-black font-bold px-3 py-3 rounded-t-lg">Hey, ik ben Roël Siemens! Dit is mijn portfolio website.</h1>
                     <h2 class="px-3 font-bold">Ik ben een Game Developer en student bij Noorderpoort Groningen.</h2>
@@ -45,14 +45,14 @@
                     <a href="#" class="-2 ms-5 font-bold">lees meer</a>
                 </div>
             </div>
-            <div class="hero-right order-first md:order-last">
+            <div class="hero-right order-first md:order-last shadow-lg rounded-3xl">
                 <img src="img/Roël.jpg" alt="" class="md:rounded-r-3xl">
             </div>
         </section>
         <section id="about me" class="info max-w-7xl mx-auto bg-linear-to-b from-[#7180B9] to-[#454e6a] grid grid-cols-1 md:grid-cols-2 md:rounded-3xl md:my-30 shadow-lg">
             <div id="picture" onclick="verwisselfotos()" class="info-left relative size-80 mx-auto md:size-100 top-20 md:-right-20 ml-5">
-                <img id="foto1" src="img/Roël joods monument (1).jpg" alt="" class="absolute w-lg shadow-2xl -top-10 md:-right-15 rounded-2xl transition-all duration-700 ease-in-out">
-                <img id="foto2" src="img/voetbal actie foto Roël (1).jpg" alt="" class="absolute w-lg shadow-2xl rounded-2xl transition-all duration-700 ease-in-out">
+                <img id="foto1" src="img/Roël joods monument (1).jpg" alt="" class="absolute w-lg shadow-2xl -top-10 md:-right-15 rounded-2xl">
+                <img id="foto2" src="img/voetbal actie foto Roël (1).jpg" alt="" class="absolute w-lg shadow-2xl rounded-2xl">
             </div>
             <div class="info-right p-15 text-white pt-20 ">
                 <div class="=rounded-lg p-3">
@@ -66,16 +66,16 @@
   
   <!-- Project 1 -->
   <div class="flex flex-col items-center text-center space-y-5">
-    <a name="Indie-Race-Game" href="https://youtu.be/CAWQ1k1Rfko" target="_blank" class="font-bold underline hover:text-black">
+    <a name="Indie-Race-Game" href="https://youtu.be/CAWQ1k1Rfko" target="_blank" class="">
       <img src="img/indie race game.jpg" alt="" class="w-80 h-80 object-cover rounded-2xl shadow-lg shadow-white mb-4">
     </a>
-    <p class="max-w-80">Één van mijn eerste 3D-projecten was een race game. Ik maakte een simpele auto met vier werkende wielen en een lapsysteem.</p>
+    <p class="max-w-80">Één van mijn eerste 3D-projecten was een race game. Ik heb in deze Race Game gewerkt met raycasting voor de wielen en heb een simpele lapsysteem gemaakt.</p>
     <p>Voor dit project had ik 2 weken.</p>
   </div>
 
   <!-- Project 2 -->
   <div class="flex flex-col items-center text-center space-y-5">
-    <a name="Hacksclusive-Game" href="https://youtu.be/FQzwNPrThJw" target="_blank" class="font-bold underline hover:text-black">
+    <a name="Hacksclusive-Game" href="https://youtu.be/FQzwNPrThJw" target="_blank" class="">
       <img src="img/Hacksclusive game.jpg" alt="" class="w-80 h-80 object-cover rounded-2xl shadow-lg shadow-white mb-4">
     </a>
     <p class="max-w-80">Dit was een groepsproject voor Hacksclusive. We maakten een kinderspel om simpel hacken te leren. Ik werkte aan de quiz en finishing touches.</p>
@@ -84,7 +84,7 @@
 
   <!-- Project 3 -->
   <div class="flex flex-col items-center text-center space-y-5">
-    <a name="Lopping-Miner-Game" href="https://mimicaldev.itch.io/looping-miner" target="_blank" class="font-bold underline hover:text-black">
+    <a name="Lopping-Miner-Game" href="https://mimicaldev.itch.io/looping-miner" target="_blank" class="">
       <img src="img/looping miner.jpg" alt="" class="w-80 h-80 object-cover rounded-2xl shadow-lg shadow-white mb-4">
     </a>
     <p class="max-w-80">In dit groepsproject maakten we een game met portalen. Ik werkte aan externe functies zoals deuren, lopende banden, en knoppen.</p>
